@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent (typeof (AudioSource))]
 public class Audio : MonoBehaviour {
@@ -10,7 +11,11 @@ public class Audio : MonoBehaviour {
     public static float[] _freqBands = new float[8];
     public static float[] _freqBands32 = new float[32];
 
-    void Start() {
+    /*void Start() {
+        _audiosource = GetComponent<AudioSource>();
+    }*/
+
+    void Awake() {
         _audiosource = GetComponent<AudioSource>();
     }
 
