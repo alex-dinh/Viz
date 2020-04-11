@@ -61,6 +61,9 @@
     <Compile Include="Assets\_Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\_Scripts\Menu.cs" />
     <Compile Include="Assets\_Scripts\ParamCube.cs" />
+    <Compile Include="Assets\_Scripts\UnityWindowsFileDragAndDrop\B83.Win32.cs" />
+    <Compile Include="Assets\_Scripts\UnityWindowsFileDragAndDrop\FileDragAndDrop.cs" />
+    <Compile Include="Assets\_Scripts\UnityWindowsFileDragAndDrop\ImageExample.cs" />
     <Compile Include="Assets\_Scripts\VizMenu.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

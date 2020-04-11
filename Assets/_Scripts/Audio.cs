@@ -1,5 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+// using System.Collections;
+// using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -69,5 +70,7 @@ public class Audio : MonoBehaviour {
             average /= count;
             _freqBands32[i] = average * 40;
         }
+        /* TODO: reverse bands without calling Reverse() */
+        Array.Reverse(_freqBands32);
     }
 }
