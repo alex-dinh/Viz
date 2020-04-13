@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine.Networking;
 
 public class Menu : MonoBehaviour {
-    public static string path = "";
+    public static string filepath = "";
     public AudioSource src;
     public AudioClip clip;
 
@@ -15,19 +15,39 @@ public class Menu : MonoBehaviour {
     }
 
     public void Play() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (!src.isPlaying) {
+            src.Play();
+        }
+    }
+
+    public void Pause() {
+        if (src.isPlaying) {
+            src.Pause();
+        }
     }
 
     public void LoadFile() {
-        path = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
         // path = "";
-        StartCoroutine(PlaySong2(path));
+        filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
+        
+        if (filepath.EndsWith(".mp3")) {
+            StartCoroutine(PlayMP3(filepath));
+        } else {
+            StartCoroutine(PlayNonMP3(filepath));
+        }
+        
+        if (src.isPlaying) {
+            src.Stop();
+        }
     }
 
-    public IEnumerator PlaySong(string path) {
-        /* Play anything non *.mp3 audio file */
+
+    public IEnumerator PlayNonMP3(string path) {
+        /* Play any non *.mp3 audio file */
         path = "file://" + path;
 
+        // TODO: only support AIF, add WAV
         UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, AudioType.AIFF);
         yield return www.SendWebRequest();
 
@@ -35,20 +55,19 @@ public class Menu : MonoBehaviour {
             Debug.LogError(www.error);
         }
 
-        AudioClip audio = DownloadHandlerAudioClip.GetContent(www);
-        src.PlayOneShot(audio);
+        clip = DownloadHandlerAudioClip.GetContent(www);
+        src.clip = clip;
+        src.Play();
     }
 
-    public IEnumerator PlaySong2(string path) {
+    public IEnumerator PlayMP3(string path) {
         /* Play *.mp3 audio files */
         path = "file://" + path;
-
         WWW www = new WWW(path);
         yield return www;
-
         clip = NAudioPlayer.FromMp3Data(www.bytes);
-
-        src.PlayOneShot(clip);
+        src.clip = clip;
+        src.Play();
     }
 
 }

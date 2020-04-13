@@ -12,11 +12,16 @@ public class FileDragAndDrop : MonoBehaviour {
     public AudioClip clip;
     private float progress;
 
-    void OnEnable () {
+    public void Awake() {
+        src = gameObject.AddComponent<AudioSource>();
+    }
+
+    void OnEnable() {
         // must be installed on the main thread to get the right thread id.
         UnityDragAndDropHook.InstallHook();
         UnityDragAndDropHook.OnDroppedFiles += OnFiles;
     }
+
     void OnDisable() {
         UnityDragAndDropHook.UninstallHook();
     }
@@ -38,33 +43,19 @@ public class FileDragAndDrop : MonoBehaviour {
 
         //string path = aFiles.Aggregate((a, b) => a + "\n\t" + b);
         string path = aFiles[0];
-        PlaySong(path);
+        StartCoroutine(PlaySong(path));
 
         Debug.LogError(path);
         log.Add(path);
     }
 
     public IEnumerator PlaySong(string path) {
-        path = "file:///" + path;
-        Debug.LogError("playing song...");
-
-        UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip(path, AudioType.MPEG);
-        var loadingOp = www.SendWebRequest();
-
-
-        while (!www.isDone) {
-            progress = loadingOp.progress;
-            yield return null;
-        }
-
-        progress = 1f;
-
-        if (!string.IsNullOrEmpty(www.error)) {
-            // error occurred
-        }
-
-        var audio = DownloadHandlerAudioClip.GetContent(www);
-        src.PlayOneShot(audio);
+        /* Play *.mp3 audio files */
+        path = "file://" + path;
+        WWW www = new WWW(path);
+        yield return www;
+        clip = NAudioPlayer.FromMp3Data(www.bytes);
+        src.PlayOneShot(clip);
     }
 
     private void OnGUI() {
