@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
 using UnityEngine.Networking;
+using UnityEngine.EventSystems;
 
 public class Menu : MonoBehaviour {
     public static string filepath = "";
     public AudioSource src;
     public AudioClip clip;
 
-    public void Awake() {
-        src = gameObject.AddComponent<AudioSource>();
+    public void Start() {
+        // src = gameObject.AddComponent<AudioSource>();
+        src = GameObject.FindGameObjectWithTag("draggedfile").GetComponent<AudioSource>();
     }
 
     public void Play() {
@@ -29,7 +31,7 @@ public class Menu : MonoBehaviour {
 
     public void LoadFile() {
         // path = "";
-        filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
+        // filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
         
         if (filepath.EndsWith(".mp3")) {
             StartCoroutine(PlayMP3(filepath));
@@ -40,8 +42,21 @@ public class Menu : MonoBehaviour {
         if (src.isPlaying) {
             src.Stop();
         }
+
     }
 
+    private bool isMouseHover() {
+        return EventSystem.current.IsPointerOverGameObject();
+    }
+
+
+    void Update() {
+        if (isMouseHover()) {
+            gameObject.SetActive(true);
+        } else {
+            gameObject.SetActive(true);
+        }
+    }
 
     public IEnumerator PlayNonMP3(string path) {
         /* Play any non *.mp3 audio file */

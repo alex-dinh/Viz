@@ -16,8 +16,10 @@ public class Audio : MonoBehaviour {
         _audiosource = GetComponent<AudioSource>();
     }*/
 
-    void Awake() {
-        _audiosource = GetComponent<AudioSource>();
+    void Start() {
+        // _audiosource = GetComponent<AudioSource>();
+        // _audiosource = GameObject.FindGameObjectWithTag("menu").GetComponent<AudioSource>();
+        _audiosource = GameObject.FindGameObjectWithTag("draggedfile").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
