@@ -6,6 +6,7 @@ TagManager:
   tags:
   - menu
   - draggedfile
+  - audiotrack
   layers:
   - Default
   - TransparentFX

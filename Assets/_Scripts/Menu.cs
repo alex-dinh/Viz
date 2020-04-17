@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 using UnityEngine.Networking;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour {
     public static string filepath = "";
     public AudioSource src;
     public AudioClip clip;
+    private Vector3 tmpMousePosition;
 
     public void Start() {
         // src = gameObject.AddComponent<AudioSource>();
@@ -32,7 +34,7 @@ public class Menu : MonoBehaviour {
     public void LoadFile() {
         // path = "";
         // filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
-        
+
         if (filepath.EndsWith(".mp3")) {
             StartCoroutine(PlayMP3(filepath));
         } else {
@@ -42,19 +44,15 @@ public class Menu : MonoBehaviour {
         if (src.isPlaying) {
             src.Stop();
         }
-
     }
 
-    private bool isMouseHover() {
-        return EventSystem.current.IsPointerOverGameObject();
+    public void ChangeAudioTime(float time) {
+        src.time = src.clip.length * time;
     }
-
 
     void Update() {
-        if (isMouseHover()) {
-            gameObject.SetActive(true);
-        } else {
-            gameObject.SetActive(true);
+        if (src != null) {
+            // slider.value = src.time / src.clip.length;
         }
     }
 
