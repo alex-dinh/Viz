@@ -11,11 +11,25 @@ public class Menu : MonoBehaviour {
     public static string filepath = "";
     public AudioSource src;
     public AudioClip clip;
+    public AudioSlider audioslider;
     private Vector3 tmpMousePosition;
+    public static float time;
+    public static bool loaded;
 
     public void Start() {
         // src = gameObject.AddComponent<AudioSource>();
         src = GameObject.FindGameObjectWithTag("draggedfile").GetComponent<AudioSource>();
+        audioslider.SetStartTime();
+    }
+
+    void Update() {
+        if (loaded) {
+            UpdateTime();
+        }
+    }
+    void UpdateTime() {
+        time = (float)(src.time / src.clip.length);
+        audioslider.SetTime(time);
     }
 
     public void Play() {
@@ -33,7 +47,7 @@ public class Menu : MonoBehaviour {
 
     public void LoadFile() {
         // path = "";
-        // filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
+        filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
 
         if (filepath.EndsWith(".mp3")) {
             StartCoroutine(PlayMP3(filepath));
@@ -47,12 +61,8 @@ public class Menu : MonoBehaviour {
     }
 
     public void ChangeAudioTime(float time) {
-        src.time = src.clip.length * time;
-    }
-
-    void Update() {
         if (src != null) {
-            // slider.value = src.time / src.clip.length;
+            src.time = src.clip.length * time;
         }
     }
 
@@ -71,6 +81,7 @@ public class Menu : MonoBehaviour {
         clip = DownloadHandlerAudioClip.GetContent(www);
         src.clip = clip;
         src.Play();
+        loaded = true;
     }
 
     public IEnumerator PlayMP3(string path) {
@@ -81,6 +92,6 @@ public class Menu : MonoBehaviour {
         clip = NAudioPlayer.FromMp3Data(www.bytes);
         src.clip = clip;
         src.Play();
+        loaded = true;
     }
-
 }

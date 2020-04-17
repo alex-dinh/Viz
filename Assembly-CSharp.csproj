@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Audio.cs" />
+    <Compile Include="Assets\_Scripts\AudioSlider.cs" />
     <Compile Include="Assets\_Scripts\DontDestroy.cs" />
     <Compile Include="Assets\_Scripts\InstantiateCubes.cs" />
     <Compile Include="Assets\_Scripts\LoadOnClick.cs" />
