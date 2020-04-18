@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine.Networking;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using SFB;
 
 public class Menu : MonoBehaviour {
     public static string filepath = "";
@@ -26,6 +27,15 @@ public class Menu : MonoBehaviour {
         if (loaded) {
             UpdateTime();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (!src.isPlaying) {
+                src.Play();
+            } else {
+                src.Pause();
+            }
+        }
+
     }
     void UpdateTime() {
         time = (float)(src.time / src.clip.length);
@@ -47,7 +57,8 @@ public class Menu : MonoBehaviour {
 
     public void LoadFile() {
         // path = "";
-        filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
+        // filepath = EditorUtility.OpenFilePanel("Viz: Load Audio File", "", "");
+        filepath = StandaloneFileBrowser.OpenFilePanel("Viz: Load Audio File", "", "", false)[0];
 
         if (filepath.EndsWith(".mp3")) {
             StartCoroutine(PlayMP3(filepath));
