@@ -7,6 +7,9 @@ TagManager:
   - menu
   - draggedfile
   - audiotrack
+  - playbutton
+  - button
+  - pausebutton
   layers:
   - Default
   - TransparentFX
