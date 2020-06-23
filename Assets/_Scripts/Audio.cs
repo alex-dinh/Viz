@@ -12,10 +12,6 @@ public class Audio : MonoBehaviour {
     public static float[] _freqBands = new float[8];
     public static float[] _freqBands32 = new float[32];
 
-    /*void Start() {
-        _audiosource = GetComponent<AudioSource>();
-    }*/
-
     void Start() {
         // _audiosource = GetComponent<AudioSource>();
         // _audiosource = GameObject.FindGameObjectWithTag("menu").GetComponent<AudioSource>();
@@ -72,7 +68,5 @@ public class Audio : MonoBehaviour {
             average /= count;
             _freqBands32[i] = average * 40;
         }
-        /* TODO: reverse bands without calling Reverse() */
-        Array.Reverse(_freqBands32);
     }
 }

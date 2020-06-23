@@ -10,7 +10,7 @@ public class InstantiateCubes : MonoBehaviour {
 
     void Start() {
         for (int i = 0; i < 512; i++) {
-            GameObject _instanceSampleCube = (GameObject)Instantiate (_sampleCubePrefab);
+            GameObject _instanceSampleCube = (GameObject) Instantiate(_sampleCubePrefab);
             _instanceSampleCube.transform.position = this.transform.position;
             _instanceSampleCube.transform.parent = this.transform;
             _instanceSampleCube.transform.name = "SampleCube" + i;

@@ -10,6 +10,7 @@ TagManager:
   - playbutton
   - button
   - pausebutton
+  - center
   layers:
   - Default
   - TransparentFX
