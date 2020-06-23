@@ -564,10 +564,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 11
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 11
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &105580051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -598,10 +598,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 3
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 3
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &140298424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 129616, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -620,10 +620,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 17
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 17
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &140298429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -871,10 +871,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 15
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 15
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &317701193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -977,10 +977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 7
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 7
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &368214612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 129616, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -999,10 +999,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 23
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 23
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &368214617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -1212,10 +1212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 30
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 30
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &435887862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -1531,10 +1531,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 5
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 5
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,10 +1902,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 13
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 13
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &611172895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -1930,10 +1930,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 22
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 22
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &626492434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -1958,10 +1958,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 28
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 28
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &633835137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -1986,10 +1986,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 24
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 24
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &658301145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -2014,10 +2014,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 9
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 9
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &658885753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -2159,10 +2159,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 18
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 18
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &894267537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -2434,10 +2434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 16
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 16
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &930958880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -2915,10 +2915,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 8
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 8
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1039614520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -3089,10 +3089,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 29
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 29
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1126073820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -3196,10 +3196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 2
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 2
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &1153411800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 129616, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -3218,10 +3218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 21
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 21
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1153411805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -3825,10 +3825,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 25
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 25
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1349547714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4431,10 +4431,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 1
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 1
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &1446446151 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 129616, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4453,10 +4453,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 10
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 10
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1446446156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4554,10 +4554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 20
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 20
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1474797254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4655,10 +4655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 19
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 19
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1491049848 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4901,10 +4901,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 26
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 26
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1599243480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4929,10 +4929,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 31
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 31
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1608343180 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -4963,10 +4963,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 4
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 4
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &1740596898
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,10 +5436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 6
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 6
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &1871874483
 GameObject:
   m_ObjectHideFlags: 0
@@ -5770,10 +5770,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 27
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 27
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1921342993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -5798,10 +5798,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 14
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 14
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &1925043470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,
@@ -5832,10 +5832,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 0
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 0
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!1 &1962835699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6096,10 +6096,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6774e81535f80bc4daaca7a0e12abb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _band: 12
-  _startScale: 1
-  _scaleMultiplier: 25
-  scale: 0
+  band: 12
+  startScale: 1
+  scaleMultiplier: 25
+  maxScale: 12
 --- !u!4 &2098689871 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442806, guid: 55be7fbee532e9245a6c7a5ff747297f,

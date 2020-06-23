@@ -65,6 +65,7 @@
     <Compile Include="Assets\_Scripts\HideOnIdle.cs" />
     <Compile Include="Assets\_Scripts\Instantiate\InstantiateCircle.cs" />
     <Compile Include="Assets\_Scripts\Instantiate\InstantiateCubes.cs" />
+    <Compile Include="Assets\_Scripts\Instantiate\InstantiateHorizontal.cs" />
     <Compile Include="Assets\_Scripts\LoadOnClick.cs" />
     <Compile Include="Assets\_Scripts\Menu.cs" />
     <Compile Include="Assets\_Scripts\NAudioPlayer.cs" />
