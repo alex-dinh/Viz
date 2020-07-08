@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InstantiateCubes : MonoBehaviour {
+public class DrawCubes : MonoBehaviour {
     // Start is called before the first frame update
     public GameObject _sampleCubePrefab;
     GameObject[] _sampleCube = new GameObject[512];

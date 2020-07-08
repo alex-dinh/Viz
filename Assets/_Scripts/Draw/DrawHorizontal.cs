@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InstantiateHorizontal : MonoBehaviour {
+public class DrawHorizontal : MonoBehaviour {
     public GameObject shape;
     public float maxScale;
     Vector3 loc;
@@ -14,13 +14,14 @@ public class InstantiateHorizontal : MonoBehaviour {
             GameObject go = Instantiate(prefab, newPos, prefab.transform.rotation);
             prefab.transform.localScale = new Vector3(1, 1, 1);
             prefab.transform.name = "Bar" + i;
+            // animate scale
             go.AddComponent<ParamCube>();
             ParamCube p = go.GetComponent<ParamCube>();
             p.band = Mathf.Abs(i);
             p.scaleMultiplier = 25f;
             p.startScale = 1f;
             p.maxScale = 8f;
-
+            
         }
     }
 

@@ -18,7 +18,7 @@ public class Menu : MonoBehaviour {
     public static bool loaded;
 
     public void Start() {
-        // src = gameObject.AddComponent<AudioSource>();
+        src = gameObject.AddComponent<AudioSource>();
         src = GameObject.FindGameObjectWithTag("draggedfile").GetComponent<AudioSource>();
         audioslider.SetStartTime();
     }
@@ -47,6 +47,22 @@ public class Menu : MonoBehaviour {
         if (!src.isPlaying) {
             src.Play();
         }
+    }
+
+    public void LoadMainMenu() {
+        SceneManager.LoadScene(0);
+    }
+
+    public void LoadGroundBars() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void LoadCircle() {
+        SceneManager.LoadScene(2);
+    }
+
+    public void LoadFloatingBars() {
+        SceneManager.LoadScene(3);
     }
 
     public void Pause() {
@@ -86,6 +102,7 @@ public class Menu : MonoBehaviour {
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError) {
+            // yield break;
             Debug.LogError(www.error);
         }
 

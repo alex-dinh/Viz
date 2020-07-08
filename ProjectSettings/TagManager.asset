@@ -11,6 +11,7 @@ TagManager:
   - button
   - pausebutton
   - center
+  - backbutton
   layers:
   - Default
   - TransparentFX

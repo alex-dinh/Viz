@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InstantiateCircle : MonoBehaviour {
+public class DrawCircle : MonoBehaviour {
     public GameObject shape;
     public float maxScale;
     float radius = 10f;
     Vector3 loc;
-    GameObject[] bars = new GameObject[32];
     float scale;
 
     // Make sure not to alter the prefab itself
@@ -23,7 +22,7 @@ public class InstantiateCircle : MonoBehaviour {
             go = Instantiate(prefab, newPos, prefab.transform.rotation);
             // go.transform.localScale = new Vector3(1, 1, 1);
             go.transform.name = "CircleBar" + i;
-            // go.transform.Rotate(new Vector3(0, 0, -90)); // degrees
+            // go.transform.Rotate(new Vector3(0, 0, -90)); // d    egrees
             go.transform.Rotate(new Vector3(0, 0, angle * 180 / Mathf.PI + 90)); // degrees
 
             // assign paramcube inspector values
@@ -32,29 +31,15 @@ public class InstantiateCircle : MonoBehaviour {
             p.band = Mathf.Abs(i);
             p.scaleMultiplier = 25;
             p.startScale = 1;
-            p.maxScale = 4;
+            p.maxScale = maxScale;
         }
     }
-
-    public void instantiate() {
-        for (int i = 0; i < 32; i++) {
-            GameObject _instanceSampleCube = (GameObject)Instantiate(shape);
-            _instanceSampleCube.transform.position = this.transform.position;
-            _instanceSampleCube.transform.parent = this.transform;
-            _instanceSampleCube.transform.name = "SampleCube" + i;
-            this.transform.eulerAngles = new Vector3(0, -0.703125f * i, 0);
-            _instanceSampleCube.transform.position = Vector3.forward * 100;
-            bars[i] = _instanceSampleCube;
-        }
-    }   
 
 
     void Start() {
         // shape = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        // loc = GameObject.FindGameObjectWithTag("center").transform.position;
         loc = new Vector3(0, 0, 0);
         instantiateInCircle(shape, loc, 32);
-        // instantiate();
     }
 
 }

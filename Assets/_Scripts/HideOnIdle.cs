@@ -20,6 +20,7 @@ public class HideOnIdle : MonoBehaviour {
         GameObject.FindGameObjectWithTag("playbutton").transform.localScale = new Vector3(1, 1, 1);
         GameObject.FindGameObjectWithTag("pausebutton").transform.localScale = new Vector3(1, 1, 1);
         GameObject.FindGameObjectWithTag("audiotrack").transform.localScale = new Vector3(1, 1, 1);
+        GameObject.FindGameObjectWithTag("backbutton").transform.localScale = new Vector3(1, 1, 1);
     }
 
     void HideButtons() {
@@ -27,6 +28,7 @@ public class HideOnIdle : MonoBehaviour {
         GameObject.FindGameObjectWithTag("playbutton").transform.localScale = new Vector3(0, 0, 0);
         GameObject.FindGameObjectWithTag("pausebutton").transform.localScale = new Vector3(0, 0, 0);
         GameObject.FindGameObjectWithTag("audiotrack").transform.localScale = new Vector3(0, 0, 0);
+        GameObject.FindGameObjectWithTag("backbutton").transform.localScale = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
